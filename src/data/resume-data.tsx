@@ -61,7 +61,7 @@ export const RESUME_DATA: ResumeData = {
             </li>
             <li>
               Resolved critical API timeout issues for large‑scale team metric calculations by implementing asynchronous processing and
-              optimized data retrieval patterns, ensuring 99.9% reliability for AI‑driven insights.
+              optimized data retrieval patterns, ensuring 90% reliability for AI‑driven insights.
             </li>
           </ul>
         </>
