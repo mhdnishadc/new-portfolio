@@ -55,7 +55,12 @@ function SocialButton({
   label,
 }: SocialButtonProps) {
   const IconComponent = ICON_MAP[iconType];
-  
+
+  if (!IconComponent) {
+    console.error(`Missing icon component for type: ${iconType}`);
+    return null;
+  }
+
   return (
     <Button className="size-8" variant="outline" size="icon" asChild={true}>
       <a
