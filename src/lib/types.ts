@@ -97,7 +97,6 @@ export interface GraphQLMe {
   about: string;
   summary: string;
   avatarUrl: string;
-  personalWebsiteUrl: string;
   contact: GraphQLContact;
   education: GraphQLEducation[];
   work: GraphQLWork[];
@@ -128,7 +127,6 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
     about: data.about,
     summary: reactToString(data.summary),
     avatarUrl: data.avatarUrl,
-    personalWebsiteUrl: data.personalWebsiteUrl,
     contact: {
       email: data.contact.email,
       tel: data.contact.tel,

@@ -7,7 +7,6 @@ export function generatePersonStructuredData() {
     name: RESUME_DATA.name,
     alternateName: RESUME_DATA.initials,
     description: RESUME_DATA.about,
-    url: RESUME_DATA.personalWebsiteUrl,
     image: RESUME_DATA.avatarUrl,
     sameAs: RESUME_DATA.contact.social.map((social) => social.url),
     address: {

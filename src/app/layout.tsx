@@ -62,9 +62,7 @@ export const metadata: Metadata = {
     description: RESUME_DATA.about,
     creator: "@BartoszJarocki",
   },
-  alternates: {
-    canonical: RESUME_DATA.personalWebsiteUrl,
-  },
+
 };
 
 export const viewport: Viewport = {

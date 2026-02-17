@@ -72,27 +72,16 @@ function SocialButton({
 
 interface ContactButtonsProps {
   contact: typeof RESUME_DATA.contact;
-  personalWebsiteUrl?: string;
 }
 
 function ContactButtons({
   contact,
-  personalWebsiteUrl,
 }: ContactButtonsProps) {
   return (
     <ul
       className="flex list-none gap-x-1 pt-1 font-mono text-sm text-foreground/80 print:hidden"
       aria-label="Contact links"
     >
-      {personalWebsiteUrl && (
-        <li>
-          <SocialButton
-            href={personalWebsiteUrl}
-            iconType="globe"
-            label="Personal website"
-          />
-        </li>
-      )}
       {contact.email && (
         <li>
           <SocialButton
@@ -126,26 +115,13 @@ function ContactButtons({
 
 interface PrintContactProps {
   contact: typeof RESUME_DATA.contact;
-  personalWebsiteUrl?: string;
 }
 
 function PrintContact({
   contact,
-  personalWebsiteUrl,
 }: PrintContactProps) {
   return (
     <div className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]">
-      {personalWebsiteUrl && (
-        <>
-          <a
-            className="underline hover:text-foreground/70"
-            href={personalWebsiteUrl}
-          >
-            {new URL(personalWebsiteUrl).hostname}
-          </a>
-          <span aria-hidden="true">/</span>
-        </>
-      )}
       {contact.email && (
         <>
           <a
@@ -190,12 +166,10 @@ export function Header() {
 
         <ContactButtons
           contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
 
         <PrintContact
           contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
       </div>
 
