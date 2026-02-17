@@ -71,6 +71,16 @@ export default async function Image() {
             gap: "1rem",
           }}
         >
+          {RESUME_DATA.contact.email && (
+            <div style={{ fontSize: "1rem", color: "#666" }}>
+              {RESUME_DATA.contact.email}
+            </div>
+          )}
+          {RESUME_DATA.contact.social.map((social) => (
+            <div key={social.name} style={{ fontSize: "1rem", color: "#666" }}>
+              {social.name}
+            </div>
+          ))}
         </div>
       </div>
     </div>,
