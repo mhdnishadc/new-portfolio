@@ -62,7 +62,6 @@ export const metadata: Metadata = {
     description: RESUME_DATA.about,
     creator: "@BartoszJarocki",
   },
-
 };
 
 export const viewport: Viewport = {

@@ -1,12 +1,8 @@
-import * as React from "react";
+import type * as React from "react";
 
 export const GitHubIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>GitHub</title>
       <path
         fill="currentColor"

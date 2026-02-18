@@ -5,17 +5,18 @@ export const RESUME_DATA: ResumeData = {
   initials: "MN",
   location: "Malappuram, Kerala",
   locationLink: "https://maps.app.goo.gl/WXkthw1mWRFoZrBfA",
-  about: "Software engineer specializing in scalable web applications using Python, Django, Node.js, and JavaScript.",
+  about:
+    "Software engineer specializing in scalable web applications using Python, Django, Node.js, and JavaScript.",
   summary: (
     <>
-      Software engineer specializing in scalable web applications using Python, Django, Node.js, and JavaScript. Expert in RESTful API
-      development with Django REST Framework, delivering robust, high‑performance solutions through strong architectural design and
-      problem‑solving.
+      Software engineer specializing in scalable web applications using Python,
+      Django, Node.js, and JavaScript. Expert in RESTful API development with
+      Django REST Framework, delivering robust, high‑performance solutions
+      through strong architectural design and problem‑solving.
     </>
   ),
   avatarUrl: "/newprofile.jpg",
 
-  
   contact: {
     email: "muhammednishad2001@gmail.com",
     tel: "+919746420466",
@@ -52,16 +53,20 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Built a high‑performance Voice Assistant component using WebRTC and Voice Activity Detection (VAD) in React, enabling seamless,
+              Built a high‑performance Voice Assistant component using WebRTC
+              and Voice Activity Detection (VAD) in React, enabling seamless,
               low‑latency verbal updates from developers.
             </li>
             <li>
-              Developed a comprehensive metrics engine in Django that calculates team productivity, task completion velocity, and risk
-              summaries, accounting for non‑working days and company holidays.
+              Developed a comprehensive metrics engine in Django that calculates
+              team productivity, task completion velocity, and risk summaries,
+              accounting for non‑working days and company holidays.
             </li>
             <li>
-              Resolved critical API timeout issues for large‑scale team metric calculations by implementing asynchronous processing and
-              optimized data retrieval patterns, ensuring 90% reliability for AI‑driven insights.
+              Resolved critical API timeout issues for large‑scale team metric
+              calculations by implementing asynchronous processing and optimized
+              data retrieval patterns, ensuring 90% reliability for AI‑driven
+              insights.
             </li>
           </ul>
         </>
@@ -78,13 +83,16 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Developed REST APIs in Django integrated with React frontends for enterprise applications.
+              Developed REST APIs in Django integrated with React frontends for
+              enterprise applications.
             </li>
             <li>
-              Implemented efficient database operations using Django ORM to ensure smooth performance.
+              Implemented efficient database operations using Django ORM to
+              ensure smooth performance.
             </li>
             <li>
-              Collaborated with cross‑functional teams to deliver features on time.
+              Collaborated with cross‑functional teams to deliver features on
+              time.
             </li>
           </ul>
         </>
@@ -113,7 +121,16 @@ export const RESUME_DATA: ResumeData = {
   projects: [
     {
       title: "AskMyDocs",
-      techStack: ["React.js", "Django", "Django REST Framework", "LangChain", "RAG", "Pinecone", "LLM", "AWS S3"],
+      techStack: [
+        "React.js",
+        "Django",
+        "Django REST Framework",
+        "LangChain",
+        "RAG",
+        "Pinecone",
+        "LLM",
+        "AWS S3",
+      ],
       description:
         "An AI‑powered document assistant that allows users to upload files and ask natural language questions to retrieve accurate answers from their content. It leverages Retrieval‑Augmented Generation (RAG) using LangChain, Pinecone Vector, and LLaMA to provide intelligent, context‑aware responses.",
       link: {

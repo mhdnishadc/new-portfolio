@@ -1,15 +1,18 @@
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
-import React from "react";
+import type React from "react";
 import { Avatar } from "@/components/avatar";
-import { Button } from "@/components/ui/button";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
+import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import type { ResumeIcon, IconType } from "@/lib/types";
+import type { IconType, ResumeIcon } from "@/lib/types";
 
 // Type-safe icon mapping
-const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+const ICON_MAP: Record<
+  IconType,
+  React.ComponentType<React.SVGProps<SVGSVGElement>>
+> = {
   github: GitHubIcon,
   linkedin: LinkedInIcon,
   x: XIcon,
@@ -23,10 +26,7 @@ interface LocationLinkProps {
   locationLink: typeof RESUME_DATA.locationLink;
 }
 
-function LocationLink({
-  location,
-  locationLink,
-}: LocationLinkProps) {
+function LocationLink({ location, locationLink }: LocationLinkProps) {
   return (
     <p className="max-w-md items-center text-pretty font-mono text-xs text-foreground">
       <a
@@ -49,11 +49,7 @@ interface SocialButtonProps {
   label: string;
 }
 
-function SocialButton({
-  href,
-  iconType,
-  label,
-}: SocialButtonProps) {
+function SocialButton({ href, iconType, label }: SocialButtonProps) {
   const IconComponent = ICON_MAP[iconType];
 
   if (!IconComponent) {
@@ -79,9 +75,7 @@ interface ContactButtonsProps {
   contact: typeof RESUME_DATA.contact;
 }
 
-function ContactButtons({
-  contact,
-}: ContactButtonsProps) {
+function ContactButtons({ contact }: ContactButtonsProps) {
   return (
     <ul
       className="flex list-none gap-x-1 pt-1 font-mono text-sm text-foreground/80 print:hidden"
@@ -122,9 +116,7 @@ interface PrintContactProps {
   contact: typeof RESUME_DATA.contact;
 }
 
-function PrintContact({
-  contact,
-}: PrintContactProps) {
+function PrintContact({ contact }: PrintContactProps) {
   return (
     <div className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]">
       {contact.email && (
@@ -169,13 +161,9 @@ export function Header() {
           locationLink={RESUME_DATA.locationLink}
         />
 
-        <ContactButtons
-          contact={RESUME_DATA.contact}
-        />
+        <ContactButtons contact={RESUME_DATA.contact} />
 
-        <PrintContact
-          contact={RESUME_DATA.contact}
-        />
+        <PrintContact contact={RESUME_DATA.contact} />
       </div>
 
       <Avatar
