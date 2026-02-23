@@ -9,10 +9,7 @@ export const RESUME_DATA: ResumeData = {
     "Software engineer specializing in scalable web applications using Python, Django, Node.js, and JavaScript.",
   summary: (
     <>
-      Software engineer specializing in scalable web applications using Python,
-      Django, Node.js, and JavaScript. Expert in RESTful API development with
-      Django REST Framework, delivering robust, high‑performance solutions
-      through strong architectural design and problem‑solving.
+      AI Engineer specializing in LLM-powered applications, Retrieval-Augmented Generation (RAG), and scalable backend systems using Python, Django, JavaScript, and Node.js. Experienced in building intelligent AI systems with LangChain and vector databases.
     </>
   ),
   avatarUrl: "/newprofile.jpg",
@@ -100,7 +97,7 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
-    "Python",
+      "Python",
     "JavaScript",
     "Django",
     "Django REST Framework",
@@ -109,6 +106,12 @@ export const RESUME_DATA: ResumeData = {
     "PostgreSQL",
     "MongoDB",
     "SQLite",
+    "LangChain",
+    "Retrieval-Augmented Generation (RAG)",
+    "LLM Integration",
+    "Vector Databases (Pinecone, ChromaDB)",
+    "Prompt Engineering",
+    "Embedding Models",
     "Git",
     "Docker",
     "Celery",
@@ -116,7 +119,7 @@ export const RESUME_DATA: ResumeData = {
     "AWS",
     "HTML",
     "CSS",
-    "REST API Development",
+    "REST API Development"
   ],
   projects: [
     {
