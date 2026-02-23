@@ -5,11 +5,13 @@ export const RESUME_DATA: ResumeData = {
   initials: "MN",
   location: "Malappuram, Kerala",
   locationLink: "https://maps.app.goo.gl/WXkthw1mWRFoZrBfA",
-  about:
-    "Software engineer specializing in scalable web applications using Python, Django, Node.js, and JavaScript.",
+  about: "AI Engineer specializing in LLM‑powered applications, Retrieval‑Augmented Generation (RAG), and scalable backend systems using Python, Django, JavaScript, and Node.js. Experienced in building intelligent AI systems with LangChain and vector databases.",
   summary: (
     <>
-      AI Engineer specializing in LLM-powered applications, Retrieval-Augmented Generation (RAG), and scalable backend systems using Python, Django, JavaScript, and Node.js. Experienced in building intelligent AI systems with LangChain and vector databases.
+      Software engineer specializing in scalable web applications using Python,
+      Django, Node.js, and JavaScript. Expert in RESTful API development with
+      Django REST Framework, delivering robust, high‑performance solutions
+      through strong architectural design and problem‑solving.
     </>
   ),
   avatarUrl: "/newprofile.jpg",
