@@ -1,4 +1,4 @@
-import { GlobeIcon, MailIcon, PhoneIcon, Github, Linkedin } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, GithubIcon, Linkedin } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
 import type React from "react";
 import { Avatar } from "@/components/avatar";
@@ -12,7 +12,7 @@ const ICON_MAP: Record<
   IconType,
   React.ComponentType<React.SVGProps<SVGSVGElement>>
 > = {
-  github: Github,
+  github: GithubIcon,
   linkedin: Linkedin,
   x: XIcon,
   globe: GlobeIcon,
